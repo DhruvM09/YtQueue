@@ -25,6 +25,3 @@
 3. Enable **Developer Mode** (top right).
 4. Click **Load Unpacked** and select the project folder.
 5. Go to YouTube and start building your queue!
-
-## 📄 License
-MIT
