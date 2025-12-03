@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YtQueue</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="logo-area">
+      <span class="logo-icon">▶</span>
+      <h1>Queue <span id="queue-count">(0)</span></h1>
+    </div>
+    <button id="clear-all-btn" class="secondary-btn">Clear All</button>
+  </header>
+
+  <div class="content-area">
+    
+    <div id="empty-state">
+      <div class="icon">😴</div>
+      <h3>Queue is empty</h3>
+      <p>Go to YouTube and click "Add to Queue"</p>
+    </div>
+
+    <ul id="queue-list">
+      </ul>
+  </div>
+
+  <footer>
+    <button id="play-next-btn" class="primary-btn">Play Next</button>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>

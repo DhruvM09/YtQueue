@@ -1,0 +1,21 @@
+{
+  "name": "YtQueue",
+  "description": "A persistent, auto-playing queue for YouTube.",
+  "version": "1.0",
+  "permissions" : ["storage" , "scripting" , "tabs" , "contextMenus" ],
+  "manifest_version": 3,
+  "host_permissions": ["https://www.youtube.com/*" , "https://noembed.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+
+}
